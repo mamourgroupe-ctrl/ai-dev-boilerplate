@@ -1,0 +1,33 @@
+# .clineignore
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+bun.lock*
+uv.lock
+poetry.lock
+node_modules/
+.next/
+dist/
+build/
+coverage/
+.venv/
+venv/
+__pycache__/
+.ruff_cache/
+*.min.*
+*.map
+*.tsbuildinfo
+**/generated/**
+**/*.sqlite
+**/*.db
+.env*
+!.env.example
+.kilocode/
+.continue/
+.claude/
+.codex/
+.augment/
+.ai-providers.env
+
+.zencoder/
+# AI provider secrets (local only)
