@@ -1,0 +1,21 @@
+meta {
+  name: Create subscription
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/api/agencies/subscription
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{accessToken}}
+}
+
+body:json {
+  {
+    "subscriptionPlanId": "plan-monthly"
+  }
+}

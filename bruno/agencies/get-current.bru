@@ -1,0 +1,15 @@
+meta {
+  name: Get current subscription
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/api/agencies/subscription
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{accessToken}}
+}

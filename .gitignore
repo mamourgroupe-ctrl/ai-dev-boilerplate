@@ -11,9 +11,8 @@ out/
 
 # Environment
 .env
-.env.local
-.env.*.local
-.env.production
+.env.*
+!.env.example
 
 # Logs
 *.log
@@ -26,8 +25,23 @@ Thumbs.db
 
 # IDE
 .vscode/*
+!.vscode/settings.json
 !.vscode/extensions.json
+!.vscode/mcp.json
+!.vscode/tasks.json
+!.vscode/launch.json
 .idea/
+
+# Agent session/local settings (do not commit)
+.kilocode/
+.cline/
+.continue/
+.roo/
+.opencode/
+.claude/
+.codex/
+.augment/
+.zencoder/
 
 # Prisma
 packages/database/prisma/migrations/dev.db*
@@ -38,6 +52,9 @@ temp/
 
 # Turbo
 .turbo/
+
+# Local AI provider secrets
+.ai-providers.env
 
 # Docker
 docker-compose.override.yml

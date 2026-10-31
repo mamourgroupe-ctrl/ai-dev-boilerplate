@@ -1,0 +1,15 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "local-router": {
+      "npm": "@ai-sdk/openai-compatible",
+      "options": {
+        "baseURL": "http://127.0.0.1:8787/v1"
+      },
+      "models": {
+        "smart-planner": { "name": "smart-planner" },
+        "fast-coder": { "name": "fast-coder" }
+      }
+    }
+  }
+}

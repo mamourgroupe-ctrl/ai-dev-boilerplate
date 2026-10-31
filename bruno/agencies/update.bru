@@ -1,0 +1,21 @@
+meta {
+  name: Update subscription
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{baseUrl}}/api/agencies/subscription/{{subscriptionId}}
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{accessToken}}
+}
+
+body:json {
+  {
+    "cancelAtPeriodEnd": true
+  }
+}
